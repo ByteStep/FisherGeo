@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mUt-8R-8K7">
+            <objects>
+                <viewController id="YOX-ks-5PG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EP4-lj-6Kv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dz-V6-ZJV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-Cq-9Xu">
+                                <rect key="frame" x="97" y="44" width="220" height="35"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="PIp-k1-Eb1"/>
+                                    <constraint firstAttribute="height" constant="35" id="UyG-Ru-Il0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Utf-gU-kHZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1bB-Cq-9Xu" firstAttribute="top" secondItem="EP4-lj-6Kv" secondAttribute="topMargin" id="98n-ic-Uef"/>
+                            <constraint firstItem="Utf-gU-kHZ" firstAttribute="trailing" secondItem="1dz-V6-ZJV" secondAttribute="trailing" id="GUF-A2-Uj6"/>
+                            <constraint firstItem="Utf-gU-kHZ" firstAttribute="bottom" secondItem="1dz-V6-ZJV" secondAttribute="bottom" id="UPg-Lk-SJI"/>
+                            <constraint firstItem="1bB-Cq-9Xu" firstAttribute="centerX" secondItem="EP4-lj-6Kv" secondAttribute="centerX" id="WsX-Tv-Jtu"/>
+                            <constraint firstItem="1dz-V6-ZJV" firstAttribute="leading" secondItem="Utf-gU-kHZ" secondAttribute="leading" id="ec1-kd-y1Y"/>
+                            <constraint firstItem="1dz-V6-ZJV" firstAttribute="top" secondItem="EP4-lj-6Kv" secondAttribute="top" id="m8W-tU-q1Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK9-sN-XjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186.95652173913044" y="-21.428571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

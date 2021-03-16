@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5A3CBE260122F000691C4B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A3CBD260122F000691C4B /* AppCoordinator.swift */; };
+		3D5A3CC22601255900691C4B /* FirstLaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A3CC12601255900691C4B /* FirstLaunchService.swift */; };
+		3D5A3CC92601297700691C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A3CC82601297700691C4B /* Main.storyboard */; };
+		3D5A3CD026012F6300691C4B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A3CCF26012F6300691C4B /* MainVC.swift */; };
+		3D5A3CD6260130D100691C4B /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A3CD5260130D100691C4B /* Map.storyboard */; };
+		3D5A3CD9260130DD00691C4B /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A3CD8260130DD00691C4B /* MapVC.swift */; };
 		3DC7D9D525FFFFD9008F1946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D9D425FFFFD9008F1946 /* AppDelegate.swift */; };
 		3DC7D9D725FFFFD9008F1946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D9D625FFFFD9008F1946 /* SceneDelegate.swift */; };
 		3DC7D9D925FFFFD9008F1946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D9D825FFFFD9008F1946 /* ViewController.swift */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D5A3CBD260122F000691C4B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3D5A3CC12601255900691C4B /* FirstLaunchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchService.swift; sourceTree = "<group>"; };
+		3D5A3CC82601297700691C4B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3D5A3CCF26012F6300691C4B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		3D5A3CD5260130D100691C4B /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		3D5A3CD8260130DD00691C4B /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		3DC7D9D125FFFFD9008F1946 /* FisherGeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisherGeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC7D9D425FFFFD9008F1946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC7D9D625FFFFD9008F1946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +59,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D5A3CBC260122D700691C4B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A3CBD260122F000691C4B /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3D5A3CC02601254600691C4B /* FirstLaunchService */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A3CC12601255900691C4B /* FirstLaunchService.swift */,
+			);
+			path = FirstLaunchService;
+			sourceTree = "<group>";
+		};
+		3D5A3CC72601296700691C4B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A3CCF26012F6300691C4B /* MainVC.swift */,
+				3D5A3CC82601297700691C4B /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3D5A3CD32601302400691C4B /* GoogleMapService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoogleMapService;
+			sourceTree = "<group>";
+		};
+		3D5A3CD4260130C300691C4B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A3CD8260130DD00691C4B /* MapVC.swift */,
+				3D5A3CD5260130D100691C4B /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		3DC7D9C825FFFFD9008F1946 = {
 			isa = PBXGroup;
 			children = (
@@ -66,13 +119,12 @@
 		3DC7D9D325FFFFD9008F1946 /* FisherGeo */ = {
 			isa = PBXGroup;
 			children = (
+				3D5A3CBC260122D700691C4B /* Coordinator */,
 				3DC7D9F426000160008F1946 /* MVPBase */,
 				3DC7D9E925FFFFED008F1946 /* CoreLayer */,
 				3DC7D9EA26000027008F1946 /* BussinessLayer */,
 				3DC7D9EB2600002E008F1946 /* PresentationLayer */,
 				3DC7D9DA25FFFFD9008F1946 /* Main.storyboard */,
-				3DC7D9D425FFFFD9008F1946 /* AppDelegate.swift */,
-				3DC7D9D625FFFFD9008F1946 /* SceneDelegate.swift */,
 				3DC7D9D825FFFFD9008F1946 /* ViewController.swift */,
 				3DC7D9DD25FFFFD9008F1946 /* Assets.xcassets */,
 				3DC7D9DF25FFFFD9008F1946 /* LaunchScreen.storyboard */,
@@ -91,6 +143,8 @@
 		3DC7D9EA26000027008F1946 /* BussinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				3D5A3CD32601302400691C4B /* GoogleMapService */,
+				3D5A3CC02601254600691C4B /* FirstLaunchService */,
 			);
 			path = BussinessLayer;
 			sourceTree = "<group>";
@@ -98,6 +152,8 @@
 		3DC7D9EB2600002E008F1946 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				3D5A3CD4260130C300691C4B /* Map */,
+				3D5A3CC72601296700691C4B /* Main */,
 				3DC7D9EC26000048008F1946 /* FirstLaunch */,
 			);
 			path = PresentationLayer;
@@ -106,10 +162,10 @@
 		3DC7D9EC26000048008F1946 /* FirstLaunch */ = {
 			isa = PBXGroup;
 			children = (
-				3DC7D9EE260000AC008F1946 /* FirstLaunch.storyboard */,
-				3DC7D9F12600013E008F1946 /* FirstLaunchVC.swift */,
-				3DC7D9F9260001F6008F1946 /* FirstLaunchPresenter.swift */,
 				3DC7D9FC26000246008F1946 /* FirstLaunchAssembly.swift */,
+				3DC7D9F9260001F6008F1946 /* FirstLaunchPresenter.swift */,
+				3DC7D9F12600013E008F1946 /* FirstLaunchVC.swift */,
+				3DC7D9EE260000AC008F1946 /* FirstLaunch.storyboard */,
 			);
 			path = FirstLaunch;
 			sourceTree = "<group>";
@@ -117,6 +173,8 @@
 		3DC7D9F426000160008F1946 /* MVPBase */ = {
 			isa = PBXGroup;
 			children = (
+				3DC7D9D425FFFFD9008F1946 /* AppDelegate.swift */,
+				3DC7D9D625FFFFD9008F1946 /* SceneDelegate.swift */,
 				3DC7D9F52600016F008F1946 /* PresentationBase.swift */,
 			);
 			path = MVPBase;
@@ -180,9 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC7D9EF260000AC008F1946 /* FirstLaunch.storyboard in Resources */,
+				3D5A3CC92601297700691C4B /* Main.storyboard in Resources */,
 				3DC7D9E125FFFFD9008F1946 /* LaunchScreen.storyboard in Resources */,
 				3DC7D9DE25FFFFD9008F1946 /* Assets.xcassets in Resources */,
 				3DC7D9DC25FFFFD9008F1946 /* Main.storyboard in Resources */,
+				3D5A3CD6260130D100691C4B /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,10 +254,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC7D9FA260001F6008F1946 /* FirstLaunchPresenter.swift in Sources */,
+				3D5A3CD026012F6300691C4B /* MainVC.swift in Sources */,
 				3DC7D9D925FFFFD9008F1946 /* ViewController.swift in Sources */,
 				3DC7D9F62600016F008F1946 /* PresentationBase.swift in Sources */,
 				3DC7D9D525FFFFD9008F1946 /* AppDelegate.swift in Sources */,
+				3D5A3CD9260130DD00691C4B /* MapVC.swift in Sources */,
+				3D5A3CC22601255900691C4B /* FirstLaunchService.swift in Sources */,
 				3DC7D9F22600013E008F1946 /* FirstLaunchVC.swift in Sources */,
+				3D5A3CBE260122F000691C4B /* AppCoordinator.swift in Sources */,
 				3DC7D9D725FFFFD9008F1946 /* SceneDelegate.swift in Sources */,
 				3DC7D9FD26000246008F1946 /* FirstLaunchAssembly.swift in Sources */,
 			);

@@ -7,10 +7,11 @@
 
 import UIKit
 
-protocol FirstLaunchAssemblyInput {
-    func configure(with vc: FirstLaunchVC)
-}
-
-class FirstLaunchAssembly: NSObject {
-
+class FirstLaunchAssembly {
+    func configure() -> UIViewController {
+        let vc = FirstLaunchVC()
+        let presenter = FirstLaunchPresenter(with: vc)
+        vc.setupOutput(with: presenter)
+        return vc
+    }
 }

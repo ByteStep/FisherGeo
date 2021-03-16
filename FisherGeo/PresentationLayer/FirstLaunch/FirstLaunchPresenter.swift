@@ -8,14 +8,15 @@
 import UIKit
 
 protocol FirstLaunchPresenterInput {
-    init(with view: FirstLaunchVC, and router: NSObject)
+    init(with view: FirstLaunchVC)
 }
 
-class FirstLaunchPresenter: PresentationBase, FirstLaunchPresenterInput {
+class FirstLaunchPresenter: PresentationBase, FirstLaunchPresenterInput, FirstLaunchVCOutput {
+    
     private weak var view: FirstLaunchVC?
     
     
-    required init(with view: FirstLaunchVC, and router: NSObject) {
+    required init(with view: FirstLaunchVC) {
         self.view = view
         
     }
